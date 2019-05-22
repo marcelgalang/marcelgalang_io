@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { browserHistory } from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory';
 import Routes from './routes';
 import './App.css';
 
+const history = createBrowserHistory()
+
 ReactDOM.render(
-  <Routes history={browserHistory} />,
+  <Routes history={history} />,
   document.getElementById('root')
 );

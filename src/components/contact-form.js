@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AlertContainer from 'react-alert';
+import AlertContainer from 'react-alert-es6';
 
 export default class ContactForm extends Component {
   constructor(props) {
